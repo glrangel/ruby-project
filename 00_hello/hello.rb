@@ -1,2 +1,9 @@
 #write your code here
-hello = "Hello!"
+def hello
+	"Hello!"
+end
+
+def greet name
+	"Hello, #{name}!"
+end
+
