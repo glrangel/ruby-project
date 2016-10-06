@@ -15,11 +15,9 @@ def first_word word
 	word.split(/\W+/)[0]
 end
 def titleize word
-	# stop_words = %w{and or the over to the a but}
-	# ["and", "or", "the", "over", "to", "the", "a", "but"]
 	ok = word.split(/\W+/)
 	ok.map! {|curr_word|
-	if %w(the and over).include?(curr_word)
+	if %w(the and over in of).include?(curr_word)
       curr_word
     else
       curr_word.capitalize
